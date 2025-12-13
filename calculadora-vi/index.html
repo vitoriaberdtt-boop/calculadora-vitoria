@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculadora-vitoria</title>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+     <main>
+        <h1>Calculadora</h1>
+        <fieldset id="calculadora">
+            <fieldset id="tela-cal">
+                <div id="result"></div> 
+            </fieldset>
+            <table 
+            style: border="1">
+                            <tr>
+                                <td class="botao" onclick="clean()">C</td>
+                                <td class="botao" onclick="back()">&lt;</td>
+                                <td class="botao" onclick="insert('/')">÷</td>
+                                <td class="botao" onclick="insert('+')">+</td>
+                            </tr>
+                                
+                            <tr>
+                                <td class="botao" onclick="insert('7')">7</td>
+                                <td class="botao" onclick="insert('8')">8</td>
+                                <td class="botao" onclick="insert('9')">9</td>
+                                <td class="botao" onclick="insert('*')">x</td>
+                            </tr>
+
+                            <tr>
+                                <td class="botao" onclick="insert('4')">4</td>
+                                <td class="botao" onclick="insert('5')">5</td>
+                                <td class="botao" onclick="insert('6')">6</td>
+                                <td class="botao" onclick="insert('-')">-</td>
+                            </tr>
+
+                            <tr>
+                                <td class="botao" onclick="insert('1')">1</td>
+                                <td class="botao" onclick="insert('2')">2</td>
+                                <td class="botao" onclick="insert('3')">3</td>
+                                <td rowspan="2" class="botao" onclick="calcular()">=</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" class="botao" onclick="insert('0')">0</td>
+                                <td class="botao" onclick="insert('.')">.</td>
+                            </tr>
+                             
+                    </table>
+            </fieldset>
+        </fieldset>
+    </main>
+    <footer>
+        <p>© Vitória Berdtt </p>
+    </footer>
+  </body>
+</html>
