@@ -1,104 +1,118 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-
 * {
     box-sizing: border-box;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: radial-gradient(rgb(195, 161, 210), rgb(16, 1, 29));
+    font-family: 'Mulish', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
 header {
     background-color: rgb(48, 15, 48);
     text-align: center;
     color: rgb(5, 5, 65);
-    font-family: Arial, sans-serif;
-    margin-top: 6rem;
-    margin-bottom: 1rem;
-    padding: 15rem;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
 }
-
+h1 {
+    color: rgb(241, 241, 247);
+    margin-bottom: 1rem;
+}
 main {
     background-image: radial-gradient(rgb(195, 161, 210), rgb(16, 1, 29));
     border-radius: 3rem;
-    padding: 1rem;
+    padding: 2rem;
     width: 25rem;
-    margin: auto;
-    margin-top: 3rem;
-}   
-body {
-    background-image: radial-gradient(rgb(195, 161, 210), rgb(16, 1, 29));
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    text-align: center;
-    color: rgb(241, 241, 247);
-    font-family: 'Mulish', sans-serif;
-    margin-top: 2rempx;
-
+    max-width: 100%;
+    margin-bottom: 1rem;
 }
 fieldset {
     background-color: rgb(200, 200, 255);
-    width: 20rem;
-    margin: auto;
-    padding: 1rem 1rem;
+    padding: 1.5rem;
+    border: none;
     border-radius: 8%;
-
 }
-#tela-cal {
-    text-align: right;
-    align-items: center;
+#tela-cal, div#result {
     font-family: 'Mulish', sans-serif;
     color: rgb(54, 1, 51);
     background-color: rgb(161, 161, 246);
-    border-radius: 2rem;
-    margin: auto;
-    margin-top: 0.9rem;
-    padding: 0.00001rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: right;
     width: 100%;
 }
-
+#tela-cal {
+    border-radius: 2rem;
+    margin-top: 0.9rem;
+}
+div#result {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+table {
+    margin: 1rem auto 0;
+    color: rgb(249, 173, 245);
+    background-color: rgb(161, 161, 246);
+    text-align: center;
+    width: 90%;
+    border-spacing: 0.3rem;
+}
+td, th {
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+td {
+    background-color: rgb(31, 1, 19);
+}
+#adiciona, #subtrai, #multiplica, #divide, #igual {
+    background-color: rgb(54, 1, 80);
+}
+th {
+    background-color: rgb(72, 1, 80);
+}
 footer {
     text-align: center;
     background-image: radial-gradient(rgb(46, 15, 59), rgb(16, 1, 29));
     color: rgb(250, 250, 255);
-    font-family: Arial, sans-serif;
-    margin-top: 1%;
-    margin-bottom: 0.5rem;
     border-radius: 2rem;
-    padding: 0.0015rem;
+    padding: 1.5rem;
     width: 25rem;
-    margin: auto;
+    max-width: 90%;
 }
-div#result {
-    font-family: 'Mulish', sans-serif;
-    font-size: 2.5rem;
-    color: rgb(54, 1, 51);
-    background-color: rgb(161, 161, 246);
-    border-radius: 1rem;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    text-align: right;
-}
-table{
-    font-family: 'Mulish', sans-serif;
-    margin: auto;
-    margin-top: 1rem;
-    border-radius: 2rem;
-    color : rgb(249, 173, 245);
-    background-color: rgb(161, 161, 246);
-    text-align: center;
-    width: 90%;
-}
-td{
-    border-radius: 0.5rem;
-    background-color: rgb(31, 1, 19);
-}
-#adiciona, #subtrai, #multiplica, #divide, #igual {
-    border-radius: 0.5rem;
-    background-color: rgb(54, 1, 80);
-}
-th {
-    border-radius: 0.5rem;
-    background-color:  rgb(72, 1, 80);
+@media (max-width: 480px) {
+    body {
+        padding: 0.6rem;
+        
+    }
+    main, footer {
+        width: 80%;
+        padding: 2rem;
+    }
+    h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    fieldset {
+        padding: 0.9rem;
+    }
+    div#result {
+        font-size: 2rem;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+    }
+     table {
+        border-spacing: 0.2rem;
+    }
+    td, th {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
 }
